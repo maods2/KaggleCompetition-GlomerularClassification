@@ -1,3 +1,4 @@
+# https://datahacker.rs/lenet-5-implementation-tensorflow-2-0/
 from tensorflow.keras import Model
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.losses import categorical_crossentropy

@@ -1,3 +1,4 @@
+# https://datahacker.rs/tf-alexnet/
 from tensorflow.keras import Model
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.utils import to_categorical
