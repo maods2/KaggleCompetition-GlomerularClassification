@@ -26,6 +26,6 @@ class LeNet(Sequential):
         self.add(Dense(84, activation='tanh'))
         self.add(Dense(nb_classes, activation='softmax'))
 
-        self.compile(optimizer='adam',
-                     loss=categorical_crossentropy,
-                     metrics=['accuracy'])
+        # self.compile(optimizer='adam',
+        #              loss=categorical_crossentropy,
+        #              metrics=['accuracy'])

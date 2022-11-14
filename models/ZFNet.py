@@ -17,9 +17,10 @@ __status__ = 'Prototype'
 
 class ZFNet:
 
-    def __init__(self):
+    def __init__(self,input_shape, num_outputs):
 
         self.model = None
+        self.build(input_shape=input_shape, num_outputs=num_outputs)
 
     def build(self, input_shape=None, num_outputs=1000):
         """

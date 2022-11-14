@@ -1,5 +1,5 @@
 # https://datahacker.rs/tf-alexnet/
-from tensorflow.keras import Model
+from tensorflow import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.losses import categorical_crossentropy
@@ -45,6 +45,6 @@ class AlexNet(Sequential):
         self.add(Dense(1000, activation='relu'))
         self.add(Dense(num_classes, activation='softmax'))
 
-        self.compile(optimizer=tf.keras.optimizers.Adam(0.001),
-                     loss='categorical_crossentropy',
-                     metrics=['accuracy'])
+        # self.compile(optimizer=keras.optimizers.Adam(0.001),
+        #              loss='categorical_crossentropy',
+        #              metrics=['accuracy'])
